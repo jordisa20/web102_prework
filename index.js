@@ -30,6 +30,7 @@ function addGamesToPage(games) {
 
     // loop over each item in the data
 
+    for (const game of games) {
 
         // create a new div element, which will become the game card
 
