@@ -154,7 +154,10 @@ const unfundedGames = GAMES_JSON.filter((game) => game.pledged < game.goal);
 const numUnfunded = unfundedGames.length;
 
 // create a string that explains the number of unfunded games using the ternary operator
-
+const infoString = `
+    Sea Monster has funded ${GAMES_JSON.length} games and raised $${totalRaised.toLocaleString()}.
+    Currently, ${numUnfunded} game${numUnfunded === 1 ? "" : "s"} remain unfunded.
+`;
 
 // create a new DOM element containing the template string and append it to the description container
 
