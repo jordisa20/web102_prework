@@ -160,6 +160,9 @@ const infoString = `
 `;
 
 // create a new DOM element containing the template string and append it to the description container
+const paragraph = document.createElement("p");
+paragraph.innerHTML = infoString;
+descriptionContainer.appendChild(paragraph);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
